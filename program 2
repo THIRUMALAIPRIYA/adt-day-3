@@ -1,0 +1,21 @@
+#include <stdio.h>
+int isOdd(int num)
+{
+    return !(num & 1);
+}
+int main()
+{
+    int num;
+    printf("Enter any number: ");
+    scanf("%d", &num);
+    if(isOdd(num))
+    {
+        printf("The number is odd.");
+    }
+    else
+    {
+        printf("The number is even.");
+    }
+    
+    return 0;
+}
