@@ -1,0 +1,14 @@
+# include <conio.h>
+# include <stdio.h>
+# include <stdlib.h>
+int lastDigit(int number){
+    int lastDigit = number % 10;
+    return lastDigit;
+}
+int main(){
+    int number, last_digit;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    last_digit = lastDigit(number);
+    printf("The last digit of %d is %d", number, last_digit);  
+}
