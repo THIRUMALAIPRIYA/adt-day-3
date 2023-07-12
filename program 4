@@ -1,0 +1,11 @@
+#include <stdio.h>
+int second_last_digit(int N) {
+    N = N / 10;
+    return N % 10;
+}
+int main() {
+    int N;
+    printf("Enter a Number: ");
+    scanf("%d", &N);
+    printf("Second Last Digit of %d = %d", N,  second_last_digit(N));
+}
